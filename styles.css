@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(bg-stars.svg);
+    background-color: hsl(234, 17%, 12%);
+}
+
+.general-container {
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: 700;
+}
+
+.heading {
+    text-transform: uppercase;
+    color: white;
+    margin-top: 5rem;
+    text-align: center;
+    letter-spacing: 15px;
+}
+
+.timer-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 2rem 0rem 2rem;
+    gap: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: hsl(237, 18%, 59%);
+}
+
+.number {
+    background: linear-gradient(to top, hsl(233, 17%, 20%) 0 50%, hsl(233, 20%, 17%) 50% 100%);
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    color: hsl(345, 95%, 68%);
+    font-size: 6rem;
+    box-shadow: 0px 8px 2px 0px black;
+    position: relative;
+    width: 17rem;
+}
+
+.number::after {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    background: rgb(20, 20, 20);
+    opacity: 0.3;
+    z-index: 10;
+}
+
+h4 {
+    margin-top: 3rem;
+}
+
+/* .number span.notch:first-of-type {
+    left: -6px;
+}
+
+.number span.notch:nth-of-type(2) {
+    right: -6px;
+}
+
+.number span:last-of-type {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    background-color: hsl(235, 16%, 14%);
+    width: 100%;
+    height: 1px;
+} */
+
+.icons-container {
+    background-image: url(pattern-hills.svg);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 12rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    max-height: 2rem;
+    position: relative;
+    bottom: -80%;
+}
